@@ -1,0 +1,74 @@
+# PI Guide — Prospective Enrollment (Triad → PD)
+
+**Purpose.** Select *triad-positive* subjects (RBD, hyposmia, depression) with gait patterns compatible with Parkinson’s disease for **prospective, non-diagnostic follow-up**.
+
+---
+
+## 1) Inclusion criteria
+- ✅ Age ≥ 18 years  
+- ✅ Clinical triad present (ideally 3/3; 2/3 acceptable)  
+- ✅ Independent ambulation  
+- ✅ **No** diagnosis of PD or other major movement disorders  
+- ✅ No comorbidities invalidating gait assessment  
+- ✅ Informed consent for **research/observational** use
+
+---
+
+## 2) Webapp flow
+1. Enter parameters (MSE ML, MSE V, MSE AP, iHR V, Gait Speed, etc.).  
+2. The app returns **Triad probability (p_RF)** + **risk band** + **top-5 SHAP** + **surrogate rule** (if matched).  
+3. (Optional) Enable *Screening mode* to estimate **PPV/NPV** at your **expected prevalence**.
+
+---
+
+## 3) Risk stratification & enrollment decision
+
+| **Band** | **Threshold** | **Additional requirements** | **Decision** |
+|---|---:|---|---|
+| 🟥 **Red** | **p ≥ 0.50** | none | **High priority – Enroll now** |
+| 🟧 **Orange** | **0.40–0.49** | **Surrogate “rule-in”** *or* **coherent SHAP** (MSE ML strongly positive) | **Medium priority – Enroll, FU 6–12 months** |
+| 🟨 **Yellow** | **0.26–0.39** | **Rule-in** *or* **coherent SHAP** | **Low priority – Enroll as intermediate, FU 12 months** |
+| 🟩 **Green** | **< 0.26** | — | **Not priority – optional resilient control** |
+
+**Typical “rule-in” patterns (from surrogate tree):**  
+- `MSE ML > ~1.75` (weight ≤ ~162.5 kg → very high risk)  
+- `MSE AP ≤ ~1.38` **and** `MSE V > ~1.33` **and** `Gait Speed > ~0.54 m/s`  
+- `MSE ML ≤ ~1.72` **and** `Gait Speed ≤ ~1.40` **and** `MSE V > ~1.55`
+
+> 🔎 **SHAP coherence** = MSE ML among top positive contributors, with MSE V/AP consistent with observed patterns.
+
+---
+
+## 4) Prospective follow-up (non-diagnostic)
+- **Red (≥0.50):** FU at **6 months**; consider specialist referral.  
+- **Orange (0.40–0.49 + rule/SHAP):** FU **6–12 months**.  
+- **Yellow (0.26–0.39 + rule/SHAP):** FU **12 months**.  
+- **Green (<0.26):** optional as **resilient control**.
+
+---
+
+## 5) Clinical triggers (referral / intensified FU)
+- 📈 Increase **p_RF ≥ 0.10** or band change (e.g., 🟨→🟥)  
+- 🧩 New **surrogate rules** matched  
+- 🧠 New **motor signs** or clinical worsening
+
+---
+
+## 6) Documentation & privacy
+- Use the app’s **one-page PDF** (inputs, p_RF, band, SHAP, rule, timestamp).  
+- Tick **“Log anonymous case (audit CSV)”** to save into `results/pilot_log.csv`:  
+  `timestamp, biomechanical inputs, p, band, rule, top-SHAP` *(no identifiers).*
+
+> ⚠️ **Ethics note:** research/triage tool. It does **not** provide a diagnosis.
+
+---
+
+### Quick FAQ
+- **Can I enroll with p=0.42 but no rule?**  
+  Preferably **NO**: request an active *rule* **or** very coherent SHAP (MSE ML dominant).  
+- **Is PPV low in low-prevalence cohorts?**  
+  Yes: it depends on **prevalence**. That’s why Screening mode estimates PPV/NPV.  
+- **Can I change thresholds?**  
+  Yes, but keep the order 0.26 < 0.40 < 0.50 to stay consistent with internal validation.
+
+---

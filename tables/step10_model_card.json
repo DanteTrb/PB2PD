@@ -1,0 +1,12 @@
+{
+  "dataset": {
+    "train_balanced_ctgan_shape": [
+      262,
+      10
+    ],
+    "test_original_shape": [
+      55,
+      10
+    ],
+    "test_target_dist": {
+      "0": 

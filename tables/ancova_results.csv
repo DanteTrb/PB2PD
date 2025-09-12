@@ -1,0 +1,7 @@
+Feature,p_triade,p_gaitspeed,Effect_persists_after_GaitSpeed?
+HRML,0.0,0.89977,✅ Yes
+DoubleSupport,1e-05,0.0,✅ Yes
+HRAP,0.00057,0.35251,✅ Yes
+SingleSupport,0.00155,0.0,✅ Yes
+Cadence,0.00709,0.25405,✅ Yes
+GaitSpeed,0.14058,0.0,❌ No

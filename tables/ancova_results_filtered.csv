@@ -1,0 +1,16 @@
+Feature,p_triade,p_gaitspeed,Effect_persists_after_GaitSpeed?
+HRML,0.0,0.89977,✅ Yes
+DoubleSupport,1e-05,0.0,✅ Yes
+HRAP,0.00057,0.35251,✅ Yes
+SingleSupport,0.00155,0.0,✅ Yes
+HRV,0.00656,0.40046,✅ Yes
+Cadence,0.00709,0.25405,✅ Yes
+Obliquity,0.02993,0.24231,✅ Yes
+StrideLength,0.15365,0.0,❌ No
+Rotation,0.26084,0.28128,❌ No
+Stance,0.51747,0.27027,❌ No
+%detML,0.52995,0.00347,❌ No
+%detV,0.67758,0.00147,❌ No
+Tilt,0.76627,0.83331,❌ No
+Swing,0.85509,0.62687,❌ No
+%detAP,0.90897,0.00136,❌ No

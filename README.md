@@ -91,3 +91,5 @@ streamlit run app.py
 	•	Author: Dante Trabassi, Sapienza University of Rome
 	•	Focus: Explainable AI for prodromal Parkinson’s disease
 	•	Goal: bringing transparency and biomechanical rigor to clinical trials.
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17551803.svg)](https://doi.org/10.5281/zenodo.17551803)

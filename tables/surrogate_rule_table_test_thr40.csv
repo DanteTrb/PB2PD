@@ -1,8 +1,0 @@
-leaf,n,true_pos,p_real,CI95,rule
-6,3,2,0.667,"[0.21, 0.94]",iHR V ≤ 77.100 AND MSE ML > 1.722 AND Age ≤ 72.500
-12,7,4,0.571,"[0.25, 0.84]",iHR V > 77.100 AND MSE ML > 1.479
-7,2,1,0.5,"[0.09, 0.91]",iHR V ≤ 77.100 AND MSE ML > 1.722 AND Age > 72.500
-10,2,1,0.5,"[0.09, 0.91]",iHR V > 77.100 AND MSE ML ≤ 1.479 AND MSE V ≤ 1.296
-11,2,1,0.5,"[0.09, 0.91]",iHR V > 77.100 AND MSE ML ≤ 1.479 AND MSE V > 1.296
-3,34,12,0.353,"[0.21, 0.52]",iHR V ≤ 77.100 AND MSE ML ≤ 1.722 AND Gait Speed ≤ 1.230
-4,5,1,0.2,"[0.04, 0.62]",iHR V ≤ 77.100 AND MSE ML ≤ 1.722 AND Gait Speed > 1.230

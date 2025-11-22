@@ -1,3 +1,21 @@
-# Ignore sensitive data
+# === HIDE SENSITIVE FILES AND OUTPUT ===
+figurez/
+results/
+tables/
+paper/
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.csv
+*.xlsx
+*.pkl
+*.npy
+*.npz
+*.pdf
+*.html
+*.json
+models/*.pkl
+models/*.sav
 data/
 paper/

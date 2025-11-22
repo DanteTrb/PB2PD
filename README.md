@@ -7,7 +7,7 @@
 
 ---
 
-## ✨ Overview
+##  Overview
 
 This project introduces a **decision-support system for selecting “triad-positive” subjects** (prodromal Parkinson’s disease) for prospective studies.  
 It is **not a medical device**, but a **research/triage tool**, ready to be validated in clinical trials.
@@ -19,7 +19,7 @@ It is **not a medical device**, but a **research/triage tool**, ready to be vali
 
 ---
 
-## 🖥️ Webapp (Streamlit MVP)
+##  Webapp (Streamlit MVP)
 
 | Patient input | Risk results | PDF export |
 |---------------|--------------|------------|
@@ -35,7 +35,7 @@ Key features:
 
 ---
 
-## 📊 Architecture
+##  Architecture
 
 - **Notebooks (EDA, preprocessing, explainability, robustness)** → `/notebooks`  
 - **Models & scaler** → `/models`  
@@ -47,7 +47,7 @@ Integrated pipeline → from biomechanical analysis to clinical reports.
 
 ---
 
-## 🔍 Key Techniques
+##  Key Techniques
 
 - **Generative data balancing** → ctGAN  
 - **Advanced explainability** → SHAP, SHAPSet plot, surrogate tree with 95% CI  
@@ -56,7 +56,7 @@ Integrated pipeline → from biomechanical analysis to clinical reports.
 
 ---
 
-## 📑 Example of PDF Report
+##  Example of PDF Report
 
 ![PDF Example](assets/triad_report.pdf)
 
@@ -91,3 +91,5 @@ streamlit run app.py
 	•	Author: Dante Trabassi, Sapienza University of Rome
 	•	Focus: Explainable AI for prodromal Parkinson’s disease
 	•	Goal: bringing transparency and biomechanical rigor to clinical trials.
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17551803.svg)](https://doi.org/10.5281/zenodo.17551803)

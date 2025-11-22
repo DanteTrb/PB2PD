@@ -1,5 +1,32 @@
-# === HIDE SENSITIVE FILES AND OUTPUT ===
+# ============================
+# PB2PD OFFICIAL GITIGNORE
+# ============================
+
+# === PYTHON ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.cache
+
+# === NOTEBOOK CHECKPOINTS ===
+.ipynb_checkpoints/
+
+# === DATA ===
+data/
+*.csv
+*.xlsx
+*.xls
+*.tsv
+*.json
+*.yaml
+*.yml
+*.xml
+
+# === FIGURES & RESULTS ===
+figure/
 figurez/
+figures/
 results/
 tables/
 paper/
@@ -7,15 +34,34 @@ paper/
 *.jpg
 *.jpeg
 *.svg
-*.csv
-*.xlsx
-*.pkl
-*.npy
-*.npz
+*.tif
+*.tiff
 *.pdf
 *.html
-*.json
+
+# === MODELS & WEIGHTS ===
+*.pkl
+*.joblib
+*.sav
+*.npy
+*.npz
 models/*.pkl
+models/*.joblib
 models/*.sav
-data/
-paper/
+
+# === STREAMLIT CACHE ===
+.app_cache/
+.streamlit/
+
+# === VENV ===
+.env
+.venv
+env/
+venv/
+ENV/
+
+# === MACOS ===
+.DS_Store
+
+# === VS CODE ===
+.vscode/

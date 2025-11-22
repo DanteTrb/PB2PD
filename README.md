@@ -98,4 +98,4 @@ streamlit run app.py
 ## 🏆 Credits & Vision
 	•	Author: Dante Trabassi, Sapienza University of Rome
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17551803.svg)](https://doi.org/10.5281/zenodo.17551803)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17551803.svg)](https://doi.org/10.5281/zenodo.17683693)

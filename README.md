@@ -1,21 +1,29 @@
-# 🚶🏻‍♀️ Triad “parkinson-like” Risk — MVP
+# 🚶🏻‍♀️ PB2PD — Prodromal Burden to Parkinson’s Disease — MVP
 
-![Hero Image](assets/triade_risk_banner.png)
+![Hero Image](assets/1.jpg)
 
-> **Explainable-first AI screening for triad-positive subjects (RBD, hyposmia, depression)**  
-> MVP designed for prospective research: risk prediction, surrogate clinical rules, and SHAP interpretability.  
+> **From in-PD prodromal burden to prospective screening tools.**  
+> This project extracts and explains gait-based biomechanical signatures associated with the “prodromal burden” phenotype (PB+ vs PB–) in patients already diagnosed with Parkinson’s disease.  
+> The resulting signatures are designed to inform future *screening studies* on normative subjects with prodromal symptoms.
 
 ---
 
-##  Overview
+## 🔍 Overview
 
-This project introduces a **decision-support system for selecting “triad-positive” subjects** (prodromal Parkinson’s disease) for prospective studies.  
-It is **not a medical device**, but a **research/triage tool**, ready to be validated in clinical trials.
+PB2PD analyzes **lumbar IMU–derived gait features** from a PD cohort stratified by prodromal burden (PB+ / PB–), where PB includes combinations of:
 
-- **Core algorithm**: Balanced Random Forest (ctGAN + Lazy Prediction).  
-- **Explainability**: SHAP (global/local), surrogate tree, clinical rules.  
-- **Screening mode**: Decision Curve Analysis, PPV/NPV at custom prevalence.  
-- **Output**: Streamlit webapp + individual PDF reports.  
+- REM Sleep Behavior Disorder (RBD)  
+- Hyposmia  
+- Depression  
+- Constipation
+
+The aim is to identify **stable biomechanical signatures**, validated with **explainable AI**, that may guide future studies on prodromal subjects *without* diagnosed PD.
+
+**Key components:**
+- Lazy Prediction for benchmark screening  
+- Balanced Random Forest (with ctGAN data balancing)   
+- SHAP explainability (global + local)  
+- Surrogate clinical rules (interpretable trees)orts.  
 
 ---
 
@@ -76,8 +84,8 @@ Includes:
 Clone the repo and run the Streamlit app:
 
 ```bash
-git clone https://github.com/DanteTrb/Triad2PD.git
-cd Triad2PD/app
+git clone https://github.com/DanteTrb/PB2PD.git
+cd PB2PD/app
 pip install -r ../requirements.txt
 streamlit run app.py
 ```
@@ -89,7 +97,5 @@ streamlit run app.py
 
 ## 🏆 Credits & Vision
 	•	Author: Dante Trabassi, Sapienza University of Rome
-	•	Focus: Explainable AI for prodromal Parkinson’s disease
-	•	Goal: bringing transparency and biomechanical rigor to clinical trials.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17551803.svg)](https://doi.org/10.5281/zenodo.17551803)

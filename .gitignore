@@ -65,3 +65,5 @@ ENV/
 
 # === VS CODE ===
 .vscode/
+
+notebooks/tables/

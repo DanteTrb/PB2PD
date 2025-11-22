@@ -1,0 +1,22 @@
+metric,value
+Brier,0.204
+ECE (quantile),0.203
+MCE (quantile),0.486
+ECE (uniforme),0.126
+MCE (uniforme),0.466
+Surrogate fidelity (vs RF@0.40),0.8
+Surrogate Accuracy,0.582
+Surrogate Precision,0.476
+Surrogate Recall,0.455
+Surrogate F1,0.465
+Surrogate AUC,0.583
+NB RF @ 0.20,0.25
+NB RF @ 0.30,0.177
+NB RF @ 0.40,0.139
+NB RF @ 0.50,0.109
+NB RF @ 0.60,-0.009
+NB Surrogate @ 0.20,0.25
+NB Surrogate @ 0.30,0.096
+NB Surrogate @ 0.40,0.048
+NB Surrogate @ 0.50,-0.018
+NB Surrogate @ 0.60,-0.118

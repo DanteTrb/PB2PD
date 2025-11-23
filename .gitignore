@@ -39,20 +39,6 @@ paper/
 *.pdf
 *.html
 
-# === MODELS & WEIGHTS ===
-*.pkl
-*.joblib
-*.sav
-*.npy
-*.npz
-models/*.pkl
-models/*.joblib
-models/*.sav
-
-# === STREAMLIT CACHE ===
-.app_cache/
-.streamlit/
-
 # === VENV ===
 .env
 .venv

@@ -48,8 +48,7 @@ Key features:
 - **Notebooks (EDA, preprocessing, explainability, robustness)** → `/notebooks`  
 - **Models & scaler** → `/models`  
 - **Surrogate rules (JSON/YAML)** → `/artifacts`  
-- **Streamlit app** → `/app/app.py`  
-- **Results/metrics** → `/tables` and `/figurez`  
+- **Streamlit app** → `/app/app.py`
 
 Integrated pipeline → from biomechanical analysis to clinical reports.  
 
@@ -66,7 +65,7 @@ Integrated pipeline → from biomechanical analysis to clinical reports.
 
 ##  Example of PDF Report
 
-![PDF Example](assets/triad_report.pdf)
+![PDF Example](assets/PB_report.pdf)
 
 Includes:
 - Patient input  
@@ -75,7 +74,7 @@ Includes:
 - PPV/NPV at custom prevalence  
 - SHAP top-5 contributions  
 - Surrogate rule matched  
-- Minimal QC (range, missing, sex, H-Y)  
+- Minimal QC (range, missing, sex)  
 
 ---
 

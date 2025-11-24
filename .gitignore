@@ -18,10 +18,6 @@ data/
 *.xlsx
 *.xls
 *.tsv
-*.json
-*.yaml
-*.yml
-*.xml
 
 # === FIGURES & RESULTS ===
 figure/

@@ -34,9 +34,9 @@ st.set_page_config(
     layout="wide"
 )
 
-MODEL_PATH   = "/models/rf_model.pkl"
-SCALER_PATH  = "/models/scaler.pkl"
-THR_JSON     = "/models/thresholds.json"
+MODEL_PATH   = "../models/rf_model.pkl"
+SCALER_PATH  = "../models/scaler.pkl"
+THR_JSON     = "../models/thresholds.json"
 RULES_JSON   = "artifacts/surrogate_rules_deploy.json"
 METRICS_JSON = "results/train_metrics.json"
 PI_GUIDE_PATH = "artifacts/PI_GUIDE.md"

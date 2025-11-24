@@ -1,5 +1,5 @@
 # app.py
-# Triad Risk — MVP (RF + SHAP) for triad-positive cohorts, with research screening mode
+# PB2PD – Prodromal Pattern Screening — MVP (RF + SHAP) for prodromal burden-positive cohorts, with research screening mode
 # -------------------------------------------------------------------------------------
 import os, io, json, math
 from datetime import datetime
@@ -21,7 +21,7 @@ except Exception:
 # =========================
 # CONFIG
 # =========================
-st.set_page_config(page_title="Triad “parkinson-like” Risk — MVP", page_icon="🚶🏻‍♀️‍➡️", layout="wide")
+st.set_page_config(page_title="PB2PD – Prodromal Pattern Screening - MVP", page_icon="🚶🏻‍♀️‍➡️", layout="wide")
 
 MODEL_PATH   = "models/rf_model.pkl"
 SCALER_PATH  = "models/scaler.pkl"                 # optional

@@ -31,7 +31,7 @@ The aim is to identify **stable biomechanical signatures**, validated with **exp
 
 | Patient input | Risk results | PDF export |
 |---------------|--------------|------------|
-| ![Input](assets/webapp1.png) | ![Output](assets/webapp2.png) | ![PDF](assets/triad_report.pdf) |
+| ![Input](assets/webapp1.png) | ![Output](assets/webapp2.png) | ![PDF](assets/PB_report_example.png) |
 
 Key features:
 - Single patient **or batch CSV** input.  
@@ -65,7 +65,9 @@ Integrated pipeline → from biomechanical analysis to clinical reports.
 
 ##  Example of PDF Report
 
-![PDF Example](assets/PB_report.pdf)
+![PDF Example](assets/PB_report_example.png)
+
+📄 [Download full PDF](assets/PB_report.pdf)
 
 Includes:
 - Patient input  

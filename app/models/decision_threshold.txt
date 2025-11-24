@@ -1,1 +1,0 @@
-threshold=0.40  # chosen to balance precision/recall on test
